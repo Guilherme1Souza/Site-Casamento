@@ -98,7 +98,7 @@ export const Navegação = styled.nav`
     z-index: 10;
 }     
 .dropdown:hover .dropdown-menu {
-        display: block; 
+        display: none; 
     }
 
 .dropdown-menu li {
@@ -107,7 +107,7 @@ export const Navegação = styled.nav`
 
 .dropdown-menu a {
 
-    display: block;
+    display: none;
 }
 
     @media (max-width: ${breakpoints.xxxl}){
@@ -149,8 +149,10 @@ export const Navegação = styled.nav`
   }
 
   .hamburger-menu {
-    display: none;
+    display: flex;
+    flex-direction: column;
     font-size: 2rem;
+    color: white;
     cursor: pointer;
     z-index: 1000;
 
@@ -159,7 +161,8 @@ export const Navegação = styled.nav`
     }
 
     @media (max-width: ${breakpoints.sm}) {
-      display: block;
+      display: flex;
+    
     }
 
     
@@ -167,6 +170,7 @@ export const Navegação = styled.nav`
 
   .header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 
     @media (max-width: ${breakpoints.sm}) {
@@ -174,8 +178,8 @@ export const Navegação = styled.nav`
       top: 100px;
       left: -100%;
       width: 50%;
-      height: 95%;
-      background-color: transparent;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
       transition: left 0.3s ease-in-out;
       flex-direction: column;
       border-radius: 0 50px 50px 0;
@@ -183,6 +187,7 @@ export const Navegação = styled.nav`
 
       &.open {
         left: 0;
+        flex-direction: column;
       }
     }
 
@@ -202,7 +207,7 @@ export const Overlay = styled.div`
   @media (max-width: ${breakpoints.xs}) {
     background: rgba(0, 0, 0, 0.5);
     z-index: 998;
-    display: block;
+    display: flex;
   position: fixed;
   top: 0;
   left: 0;
@@ -222,5 +227,12 @@ export const Logo = styled.div`
     width: 40px;
     height: 40px;
   }
+
+    @media (max-width: ${breakpoints.xs}) {
+       position: fixed;
+      left: 280px;
+      top: -10px
+    }
+
 
 `;

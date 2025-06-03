@@ -5,6 +5,7 @@ import { useEffect, useState, useRef } from 'react';
 import arrayImg from '../images/nest.jpg';
 import arrayImg2 from '../images/eyes-two.jpg';
 import arrayImg3 from '../images/shaky.jpg';
+import { Hero } from "../components/Hero";
 
 const imagensPreload = [arrayImg, arrayImg2, arrayImg3];
 
@@ -158,8 +159,11 @@ export function Home() {
           )}
 
           <Nav />
+          <Hero/>
           <ParallaxGallery />
-          <audio ref={audioRef} src="/King.mp3" loop />
+          <audio ref={audioRef} src="/King.mp3" loop>
+            <track kind="captions" srcLang="en" label="English captions" />
+          </audio>
         </>
       )}
     </>

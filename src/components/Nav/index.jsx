@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Navegação, Logo } from "./style";
 import { FiAlignJustify } from "react-icons/fi";
-import { Link } from "react-router-dom";
 
 export function Nav() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -12,9 +11,22 @@ export function Nav() {
 
     return (
         <Navegação>
-            <div className="hamburger-menu" onClick={toggleMenu}>
+            <button
+                className="hamburger-menu"
+                onClick={toggleMenu}
+                aria-label="Abrir menu"
+                tabIndex={0}
+                type="button"
+                style={{ background: "none", border: "none", padding: 0, cursor: "pointer" }}
+                onKeyDown={e => {
+                    if (e.key === "Enter" || e.key === " ") {
+                        e.preventDefault();
+                        toggleMenu();
+                    }
+                }}
+            >
                 <FiAlignJustify />
-            </div>
+            </button>
             <header className={`header ${menuOpen ? "open" : ""}`}>
                 <Logo>
                 <img src="/logo.svg" alt="Logo" />
