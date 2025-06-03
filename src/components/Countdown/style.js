@@ -72,7 +72,7 @@ export const ModalContent = styled.div`
 
   height: 100%;
   max-width: 400px;
-  box-shadow: 0 0 10px #000;
+  box-shadow: 0px #000;
 
   h3 {
     color: #fff;
