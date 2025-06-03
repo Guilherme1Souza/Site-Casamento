@@ -217,22 +217,25 @@ export const Overlay = styled.div`
 `;
 
 export const Logo = styled.div`
- position: absolute;
+  display: flex;
+  position: absolute;
   top: 0;
   left: 0;
-  padding: 50px; /* opcional, ajusta o espaçamento */
-  z-index: 100; /* opcional, para garantir que o logo fique na frente */
+  padding: 50px;
+  z-index: 100;
 
   > img {
     width: 40px;
     height: 40px;
   }
 
-    @media (max-width: ${breakpoints.xs}) {
-       position: fixed;
-      left: 280px;
-      top: -10px
-    }
-
-
+  @media (max-width: ${breakpoints.xs}) {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    justify-content: end;
+  }
 `;

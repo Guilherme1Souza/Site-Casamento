@@ -161,11 +161,12 @@ export function Home() {
 
           <Nav />
           <Hero/>
+           <ParallaxGallery />
           <ContactForm/>
-          <ParallaxGallery />
-          <audio ref={audioRef} src="/King.mp3" loop>
+         
+          {/* <audio ref={audioRef} src="/King.mp3" loop>
             <track kind="captions" srcLang="en" label="English captions" />
-          </audio>
+          </audio> */}
         </>
       )}
     </>
