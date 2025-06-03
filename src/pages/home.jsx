@@ -6,6 +6,7 @@ import arrayImg from '../images/nest.jpg';
 import arrayImg2 from '../images/eyes-two.jpg';
 import arrayImg3 from '../images/shaky.jpg';
 import { Hero } from "../components/Hero";
+import ContactForm from "../components/Forms";
 
 const imagensPreload = [arrayImg, arrayImg2, arrayImg3];
 
@@ -160,6 +161,7 @@ export function Home() {
 
           <Nav />
           <Hero/>
+          <ContactForm/>
           <ParallaxGallery />
           <audio ref={audioRef} src="/King.mp3" loop>
             <track kind="captions" srcLang="en" label="English captions" />
