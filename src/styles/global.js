@@ -7,7 +7,7 @@ export default createGlobalStyle`
         box-sizing: border-box;
     }
     body {
-      font-family: 'Pragati Narrow', sans-serif;
+       font-family: 'Segoe UI', sans-serif;
     }
 a {
         text-decoration: none;
