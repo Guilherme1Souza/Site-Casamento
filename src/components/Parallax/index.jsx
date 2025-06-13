@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { GalleryWrapper, Row, Image, Overlay, OverlayContent, OverlayText, OverlaySubtext } from './style';
 
 import arrayImg from '../../images/dance.jpg';
@@ -30,6 +30,24 @@ const imageRows = [
 
 const ParallaxGallery = () => {
   const [scrollY, setScrollY] = useState(0);
+  const ref = useRef();
+  const [isVisible, setIsVisible] = useState(false);
+  
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) setIsVisible(true);
+        },
+        { threshold: 0.3 }
+      );
+  
+      if (ref.current) observer.observe(ref.current);
+  
+      return () => {
+        if (ref.current) observer.unobserve(ref.current);
+      };
+    }, []);
+  
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -38,7 +56,8 @@ const ParallaxGallery = () => {
   }, []);
 
   return (
-    <>    <GalleryWrapper>
+    <>    
+    <GalleryWrapper ref={ref} isVisible={isVisible}>
       <Overlay />
       <OverlayContent>
         <OverlayText>Para que todos vejam, e saibam, e considerem, e juntamente entendam que a mão do Senhor fez isto.</OverlayText>
@@ -59,7 +78,6 @@ const ParallaxGallery = () => {
       ))}
     </GalleryWrapper>
     </>
-
   );
 };
 

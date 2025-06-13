@@ -1,4 +1,16 @@
-import styled from "styled-components";
+import styled, { keyframes, css } from "styled-components";
+
+
+const slideInLeft = keyframes`
+  from {
+    opacity: 0;
+    transform: translatex(-160px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
 
 export const CountdownWrapper = styled.div`
   display: flex;
@@ -8,6 +20,16 @@ export const CountdownWrapper = styled.div`
   padding-top: 2.9rem;
   color: #f1f1f1;
   max-width: 100%;
+  opacity: 0;
+  transform: translatex(-60px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+
+  ${({ isVisible, delay }) =>
+    isVisible &&
+    css`
+      animation: ${slideInLeft} 0.8s ease-out forwards;
+      animation-delay: ${delay};
+    `}
 `;
 
 export const CountdownTitle = styled.h3`

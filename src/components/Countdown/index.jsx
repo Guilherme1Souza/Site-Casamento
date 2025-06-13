@@ -22,6 +22,25 @@ const Countdown = () => {
 
   const [modalConfirmacaoAberta, setModalConfirmacaoAberta] = useState(false);
   const [modalObrigadoAberta, setModalObrigadoAberta] = useState(false);
+  const [visibleCards, setVisibleCards] = useState([]);
+  const ref = useRef();
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) setIsVisible(true);
+      },
+      { threshold: 0.3 }
+    );
+
+    if (ref.current) observer.observe(ref.current);
+
+    return () => {
+      if (ref.current) observer.unobserve(ref.current);
+    };
+  }, []);
+
 
   const form = useRef();
 
@@ -65,7 +84,7 @@ const Countdown = () => {
   }, []);
 
   return (
-    <CountdownWrapper>
+    <CountdownWrapper ref={ref} isVisible={isVisible}>
       <CountdownTitle>Contagem Regressiva</CountdownTitle>
       <TimeBox>
         <div>

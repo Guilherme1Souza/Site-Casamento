@@ -8,6 +8,7 @@ export default createGlobalStyle`
     }
     body {
        font-family: 'Segoe UI', sans-serif;
+       background-color: black;
     }
 a {
         text-decoration: none;

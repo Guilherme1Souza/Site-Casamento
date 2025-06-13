@@ -1,4 +1,16 @@
-import styled from 'styled-components';
+import styled, { keyframes, css } from "styled-components";
+
+
+const slideInBottom = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(160px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
 
 export const GalleryWrapper = styled.section`
   position: relative;
@@ -7,6 +19,16 @@ export const GalleryWrapper = styled.section`
   padding: 100px 0;
   z-index: 1;
   overflow: hidden;
+  opacity: 0;
+    transform: translateY(-60px);
+    transition: opacity 0.3s ease, transform 1.68s ease;
+  
+    ${({ isVisible, delay }) =>
+      isVisible &&
+      css`
+        animation: ${slideInBottom} 1.68s ease-out forwards;
+        animation-delay: ${delay};
+      `}
 `;
 
 export const Row = styled.div`
