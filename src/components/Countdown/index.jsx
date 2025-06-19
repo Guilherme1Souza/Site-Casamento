@@ -172,8 +172,6 @@ const Countdown = () => {
               <X />
             </button>
             <h3>Obrigado por confirmar sua presença! 🎉</h3>
-            <p>Deseja deixar um recado para os noivos?</p>
-             <FormButton type="submit">Recado</FormButton>
           </ModalContent>
         </ModalOverlay>
       )}
