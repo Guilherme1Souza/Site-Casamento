@@ -14,6 +14,7 @@ const slideInBottom = keyframes`
 
 export const GalleryWrapper = styled.section`
   position: relative;
+  top: 60px;
   width: 100%;
   background: black;
   padding: 100px 0;

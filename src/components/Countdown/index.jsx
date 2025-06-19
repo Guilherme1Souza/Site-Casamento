@@ -130,15 +130,10 @@ const Countdown = () => {
               <X />
             </button>
             <Container>
-              <h4>Confirmar Presença</h4>
               <FormContainer ref={form} onSubmit={enviarFormulario}>
                 <FormLabel>
-                  Nome:
+                  Nome completo:
                   <FormInput type="text" name="nome" required />
-                </FormLabel>
-                <FormLabel>
-                  Sobrenome:
-                  <FormInput type="text" name="sobrenome" required />
                 </FormLabel>
                 <FormLabel>
                   Telefone:
