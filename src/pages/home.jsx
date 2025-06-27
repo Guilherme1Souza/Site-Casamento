@@ -8,6 +8,7 @@ import arrayImg3 from '../images/shaky.jpg';
 import { Hero } from "../components/Hero";
 import Countdown from "../components/Countdown";
 import GiftCard from "../components/Carrossel";
+import GiftCardLocation from "../components/Location";
 
 const imagensPreload = [arrayImg, arrayImg2, arrayImg3];
 
@@ -165,6 +166,7 @@ export function Home() {
           <Countdown/>
            <ParallaxGallery />
            <GiftCard/>
+           <GiftCardLocation />
           {/* <audio ref={audioRef} src="/King.mp3" loop>
             <track kind="captions" srcLang="en" label="English captions" />
           </audio> */}
