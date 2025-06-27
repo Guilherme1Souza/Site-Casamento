@@ -11,7 +11,7 @@ export function Nav() {
 
     return (
         <Navegação>
-            <button
+            {/* <button
                 className="hamburger-menu"
                 onClick={toggleMenu}
                 aria-label="Abrir menu"
@@ -26,12 +26,12 @@ export function Nav() {
                 }}
             >
                 <FiAlignJustify />
-            </button>
+            </button> */}
             <header className={`header ${menuOpen ? "open" : ""}`}>
                 <Logo>
                 <img src="/logo.svg" alt="Logo" />
             </Logo>
-                <nav className="nav">
+                {/* <nav className="nav">
                      
                     <ul className="nav-list">
                         <li>
@@ -60,7 +60,7 @@ export function Nav() {
                             </a>
                         </li>
                     </ul>
-                </nav>
+                </nav> */}
             </header>
         </Navegação>
     );
