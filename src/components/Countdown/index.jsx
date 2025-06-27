@@ -106,7 +106,7 @@ const Countdown = () => {
       </TimeBox>
 
       <FormButton type="button" onClick={() => setModalConfirmacaoAberta(true)}>
-        Confirmar Presença
+        CONFIRMAR PRESENÇA
       </FormButton>
 
       {/* Modal de confirmação */}
@@ -144,7 +144,7 @@ const Countdown = () => {
                     pattern="\d{10,15}"
                   />
                 </FormLabel>
-                <FormButton type="submit">Enviar</FormButton>
+                <FormButton type="submit">ENVIAR</FormButton>
               </FormContainer>
             </Container>
           </ModalContent>

@@ -172,7 +172,7 @@ export const FormButton = styled.button`
   font-weight: 600;
   font-size: 1rem;
   border: none;
-  border-radius: 8px;
+  border-radius: 0px 8px;
   cursor: pointer;
   transition: background 0.3s ease;
 
