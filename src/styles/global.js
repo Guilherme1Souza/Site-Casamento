@@ -5,15 +5,15 @@ export default createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+         font-family: 'Segoe UI', sans-serif;
     }
     body {
-       font-family: 'Segoe UI', sans-serif;
        background-color: black;
     }
-a {
-        text-decoration: none;
-        color: inherit;
-    }
+    a {
+            text-decoration: none;
+            color: inherit;
+        }
 
     button, a {
         cursor: pointer;
