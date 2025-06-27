@@ -41,12 +41,12 @@ export function Nav() {
                         </li>
                         <li>
                             <a href="/about" className="nav-a-list" onClick={toggleMenu}>
-                                Sobre nós
+                               Presença
                             </a>
                         </li>
                         <li>
                             <a href="/experience" className="nav-a-list" onClick={toggleMenu}>
-                                Presença
+                                 Sobre nós
                             </a>
                         </li>
                         <li>
@@ -56,7 +56,7 @@ export function Nav() {
                         </li>
                         <li>
                             <a href="/projects" className="nav-a-list" onClick={toggleMenu}>
-                                Registro
+                                Recado
                             </a>
                         </li>
                     </ul>
