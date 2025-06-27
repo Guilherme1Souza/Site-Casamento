@@ -43,7 +43,7 @@ const RedirectButton = styled.a`
   background-color: #C37022;
   color: white;
   font-weight: 400;
-  border-radius: 2px;
+  border-radius: 0px 8px;
   text-decoration: none;
   text-align: center;
   transition: background 0.3s ease;
