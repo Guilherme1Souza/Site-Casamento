@@ -42,7 +42,7 @@ const RedirectButton = styled.a`
   padding: 12px 20px;
   background-color: #C37022;
   color: white;
-  font-weight: bold;
+  font-weight: 400;
   border-radius: 2px;
   text-decoration: none;
   text-align: center;
@@ -113,7 +113,7 @@ const GiftCard = () => {
             </div>
           ))}
         </SliderWrapper>
-        <RedirectButton href="https://docs.google.com/spreadsheets/d/1rARLGXMmFzgvxaQDFmIHFRLWf_EFypXepeLX6Fr0hSk/edit?usp=sharing">Ver Lista de Presentes</RedirectButton>
+        <RedirectButton href="https://docs.google.com/spreadsheets/d/1rARLGXMmFzgvxaQDFmIHFRLWf_EFypXepeLX6Fr0hSk/edit?usp=sharing">LISTA DE PRESENTES</RedirectButton>
       </Overlay>
     </Card>
   );
