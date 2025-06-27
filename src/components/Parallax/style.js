@@ -17,7 +17,7 @@ export const GalleryWrapper = styled.section`
   top: 60px;
   width: 100%;
   background: black;
-  padding: 100px 0;
+  padding: 60px 0;
   z-index: 1;
   overflow: hidden;
   opacity: 0;
@@ -81,19 +81,20 @@ export const OverlayContent = styled.div`
   transform: translate(-50%, -50%);
   z-index: 3;
   pointer-events: none;
-  text-align: center;
   color: white;
   text-shadow: 2px 2px 5px black;
-
+  font-size: 14px;
+  width: 350px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
+  justify-content: start;
   gap: 10px;
 `;
 
 export const OverlayText = styled.div`
   font-size: 3rem;
+ 
 
   @media (max-width: 1024px) {
     font-size: 2.2rem;
@@ -104,7 +105,7 @@ export const OverlayText = styled.div`
   }
 
   @media (max-width: 480px) {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 `;
 
@@ -120,7 +121,7 @@ export const OverlaySubtext = styled.div`
   }
 
   @media (max-width: 480px) {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 `;
 

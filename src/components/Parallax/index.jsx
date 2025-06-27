@@ -59,11 +59,6 @@ const ParallaxGallery = () => {
     <>    
     <GalleryWrapper ref={ref} isVisible={isVisible}>
       <Overlay />
-      <OverlayContent>
-        <OverlayText>Para que todos vejam, e saibam, e considerem, e juntamente entendam que a mão do Senhor fez isto.</OverlayText>
-        <OverlaySubtext>Isaias 41:20</OverlaySubtext>
-      </OverlayContent>
-
       {imageRows.map((images, index) => (
         <Row
           key={index}
