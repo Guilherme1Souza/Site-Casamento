@@ -112,7 +112,7 @@ const Countdown = () => {
       {/* Modal de confirmação */}
       {modalConfirmacaoAberta && (
         <ModalOverlay>
-          <ModalContent style={{ maxWidth: "400px", padding: "20px", position: "relative" }}>
+          <ModalContent style={{ maxWidth: "400px", padding: "20px", position: "relative", height: "450px" }}>
             <button
               onClick={() => setModalConfirmacaoAberta(false)}
               style={{
@@ -154,7 +154,7 @@ const Countdown = () => {
       {/* Modal de agradecimento */}
       {modalObrigadoAberta && (
         <ModalOverlay>
-          <ModalContent style={{ maxWidth: "400px", padding: "40px", textAlign: "center", position: "relative" }}>
+          <ModalContent style={{ maxWidth: "400px", padding: "40px", textAlign: "center", position: "relative"}}>
             <button
               onClick={() => setModalObrigadoAberta(false)}
               style={{
