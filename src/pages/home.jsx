@@ -169,9 +169,9 @@ export function Home() {
            <GiftCard/>
            <GiftCardLocation />
            <RecadoForm />
-          {/* <audio ref={audioRef} src="/King.mp3" loop>
+          <audio ref={audioRef} src="/King.mp3" loop>
             <track kind="captions" srcLang="en" label="English captions" />
-          </audio> */}
+          </audio>
         </>
       )}
     </>
