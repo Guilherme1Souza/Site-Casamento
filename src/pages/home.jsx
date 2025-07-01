@@ -146,7 +146,7 @@ export function Home() {
 
   return (
     <>
-      {!loaded ? (
+      {/* {!loaded ? (
         <Preloader onImageLoad={handleImageLoad} />
       ) : (
         <>
@@ -160,7 +160,7 @@ export function Home() {
                 </button>
               </div>
             </div>
-          )}
+          )} */}
 
           <Nav />
           <Hero/>
@@ -174,6 +174,3 @@ export function Home() {
           </audio>
         </>
       )}
-    </>
-  );
-}
