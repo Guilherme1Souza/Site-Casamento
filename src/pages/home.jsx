@@ -9,6 +9,7 @@ import { Hero } from "../components/Hero";
 import Countdown from "../components/Countdown";
 import GiftCard from "../components/Carrossel";
 import GiftCardLocation from "../components/Location";
+import GiftCardDress from "../components/DressCode";
 import RecadoForm from "../components/Recados";
 
 const imagensPreload = [arrayImg, arrayImg2, arrayImg3];
@@ -168,7 +169,9 @@ export function Home() {
            <ParallaxGallery />
            <GiftCard/>
            <GiftCardLocation />
+           <GiftCardDress />
            <RecadoForm />
+           
           <audio ref={audioRef} src="/King.mp3" loop>
             <track kind="captions" srcLang="en" label="English captions" />
           </audio>
