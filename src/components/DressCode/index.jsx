@@ -56,7 +56,7 @@ const GiftCardDress = () => {
           <StaticImage src={arrayImg} alt="Presente" />
         </ImageWrapper>
         <RedirectButton
-          href=""
+          href="https://pin.it/lbEWcuUy8"
           target="_blank"
           rel="noopener noreferrer"
         >
